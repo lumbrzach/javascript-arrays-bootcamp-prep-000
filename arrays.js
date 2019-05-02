@@ -17,3 +17,20 @@ function destructivelyAddElementToEndOfArray (chocolateBars, twix) {
   chocolateBars.push(twix);
   return chocolateBars;
 };
+
+function accessElementInArray (chocolateBars, index) {
+  return chocolateBars[index];
+};
+
+function destructivelyRemoveElementFromBeginningOfArray (chocolateBars) {
+  chocolateBars.shift();
+  return chocolateBars;
+};
+
+function removeElementFromBeginningOfArray (chocolateBars) {
+  return chocolateBars.slice(1);
+};
+
+function removeElementFromEndOfArray(chocolateBars){
+  return chocolateBars.slice(0, chocolateBars.length - 1);
+};
